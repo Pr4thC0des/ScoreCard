@@ -77,8 +77,9 @@ A Flutter application for conducting digital inspections of train stations based
     Toggle between light and dark themes using a switch on the home screen    
 
 
-## 📌 Assumptions / Known Limitations     
-**Assumptions**
+## 📌 Assumptions and Known Limitations 
+
+## Assumptions
     - Each scorecard entry contains:
     - Date of inspection
     - Station name
