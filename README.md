@@ -16,11 +16,11 @@ A Flutter application for conducting digital inspections of train stations based
 
 | Home Screen | Scorecard Form | Scorecard Preview |
 |-------------|----------------|-------------------|
-| ![Home](assets/screenshots/home.jpg) | ![Form](assets/screenshots/form.jpg) | ![Preview](assets/screenshots/preview.jpg) |
+| ![Home](lib/assets/screenshots/home.jpg) | ![Form](lib/assets/screenshots/form.jpg) | ![Preview](lib/assets/screenshots/preview.jpg) |
 
 | View Scorecards | PDF Preview | Dark Mode |
 |-----------------|-------------|------------|
-| ![View](assets/screenshots/view.jpg) | ![PDF](assets/screenshots/pdf.jpg) | ![Dark](assets/screenshots/dark_mode.jpg) |
+| ![View](lib/assets/screenshots/view.jpg) | ![PDF](lib/assets/screenshots/pdf.jpg) | ![Dark](lib/assets/screenshots/dark_mode.jpg) |
 
 ---
 
@@ -31,10 +31,12 @@ A Flutter application for conducting digital inspections of train stations based
    cd scorecard_app
 
 2. **Install Dependencies**
+    ```bash
     flutter pub get
 
 3. **Add Assets**
     Make sure pubspec.yaml includes the background images:
+    ```bash
         flutter:
         assets:
             - assets/your-image-name.jpg   
@@ -42,17 +44,18 @@ A Flutter application for conducting digital inspections of train stations based
     **Note** - Place your image in the assets/ folder if it doesn’t exist.        
 
 4. **Run the App**
+    ```bash
     flutter run         
     
 
 ## ✨ Key Features Implemented       
 1. **Multi-section Scorecard Form**
     Allows users to fill cleanliness-related scores (0–10) with remarks for each section such as:
-        Dustbins
-        Toilets
-        Platforms
-        Track area
-        Waiting rooms
+       -  Dustbins
+       - Toilets
+       - Platforms
+       - Track area
+       - Waiting rooms
 
 2. **Form Validation & Preview**
     Validates user input and shows a preview before submission.
@@ -61,14 +64,14 @@ A Flutter application for conducting digital inspections of train stations based
     Uses SharedPreferences to save scorecards locally.  
 
 4. **Scorecard History Viewer**
-    --> View all past submissions
-    --> Swipe to delete individual entries
-    --> Delete all scorecards with confirmation
-    --> Undo last deletion            
+    - View all past submissions
+    - Swipe to delete individual entries
+    - Delete all scorecards with confirmation
+    - Undo last deletion            
 
 5. **Generate & Preview PDF**
-    Dynamically generate a PDF of all stored scorecards
-    Open preview with a single tap
+    - Dynamically generate a PDF of all stored scorecards
+    - Open preview with a single tap
 
 6. **Dark Mode Support**
     Toggle between light and dark themes using a switch on the home screen    
@@ -76,12 +79,12 @@ A Flutter application for conducting digital inspections of train stations based
 
 ## 📌 Assumptions / Known Limitations     
 **Assumptions**
-    --> Each scorecard entry contains:
-    --> Date of inspection
-    --> Station name
-    --> Category-wise scores and remarks
-    --> Users manually enter correct and complete information
-    --> The app is used by inspectors with basic mobile usage familiarity
+    - Each scorecard entry contains:
+    - Date of inspection
+    - Station name
+    - Category-wise scores and remarks
+    - Users manually enter correct and complete information
+    - The app is used by inspectors with basic mobile usage familiarity
 
 ## Known Limitations
     ❌ No Cloud Sync: Data is stored only locally. If the app is deleted, data is lost.
@@ -94,9 +97,8 @@ A Flutter application for conducting digital inspections of train stations based
 ## 📧 Author
 Prathul K M
 
-✉️ prathulkm@gmail.com
+    ✉️ prathulkm@gmail.com
 
 🔗 GitHub Profile
-    https://github.com/Pr4thC0des
 
-# ScoreCard
+    https://github.com/Pr4thC0des
